@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link href="styles.css" rel="stylesheet">
+		<link href='https://fonts.googleapis.com/css?family=Basic' rel='stylesheet'>
+		<script type="module" src="script.js"></script>
+	</head>
+	<body>
+		<header>
+			<h1>Aware of Our Air</h1>
+			<h2>Become more aware of our air quality</h2>
+		</header>
+		
+		<section>
+			<nav>
+				<ul>
+					<li><a href="index.html">Map</a></li>
+					<li><a href="resources.html">More Resources</a></li>
+					<li><a href="about.html">About Page</a></li>
+				</ul>
+			</nav>
+			
+			<article>
+				<div class="embed-container">
+					<iframe frameborder="0" scrolling="no" title="AQI of USA" src="//www.arcgis.com/apps/Embed/index.html?webmap=242e8000afd140048f1a3a0a8f477001&extent=-149.6109,13.3558,-46.0757,57.2008&home=true&zoom=true&previewImage=false&scale=true&search=true&searchextent=true&disable_scroll=false&theme=light"></iframe>
+				</div>
+		
+				<div class="description">
+					<h3>AQI Map of the USA</h3>
+					<ol>
+						<li>📍Use the search bar to look for cities in the US </li>
+						<li>🔢The number shown in the area is their air quality index</li>
+						<li>🖱Click the number on the map and it will provide details</li>
+						<li>👇Check below for what the index indicates and what you can do</li>
+					</ol>	
+				</div>
+			</article>
+			
+		</section>
+		
+		<div class="index">
+			<h3>Index Scale</h3>
+			<table style="width: 75%">
+				<tr style="background-color: LightGray">
+					<th>Category</th>
+					<th>Index Value</th>
+					<th colspan="2">Description</th>
+				</tr>
+				<tr style="background-color: LightGreen">
+					<td>Good</td>
+					<td>0-50</td>
+					<td style="text-align: left">Air quality is satisfactory, and air pollution poses little or no risk.</td>
+					<td><a href="goodIndex.html"><button>What can I do?</button></a></td>
+				</tr>
+				<tr style="background-color: LightYellow">
+					<td>Moderate</td>
+					<td>51-100</td>
+					<td style="text-align: left">Air quality is acceptable. However, there may be a risk for some people, particularly those who are unusually sensitive to air pollution.</td>
+					<td><a href="moderateIndex.html"><button>What can I do?</button></a></td>
+				</tr>
+				<tr style="background-color: LightSalmon">
+					<td>Unhealthy for sensitive groups</td>
+					<td>101-150</td>
+					<td style="text-align: left">Members of sensitive groups may experience health effects. The general public is less likely to be affected.</td>
+					<td><a href="sensitiveIndex.html"><button>What can I do?</button></a></td>
+				</tr>
+				<tr style="background-color: LightCoral">
+					<td>Unhealthy</td>
+					<td>151-200</td>
+					<td style="text-align: left">Some members of the general public may experience health effects; members of sensitive groups may experience more serious health effects.</td>
+					<td><a href="unhealthyIndex.html"><button>What can I do?</button></a></td>
+				</tr>
+				<tr style="background-color: Plum">
+					<td>Very unhealthy</td>
+					<td>201-300</td>
+					<td style="text-align: left">Health alert: The risk of health effects is increased for everyone.</td>
+					<td><a href="badIndex.html"><button>What can I do?</button></a></td>
+				</tr>
+				<tr style="background-color: IndianRed">
+					<td>Hazardous</td>
+					<td>300+</td>
+					<td style="text-align: left">Health warning of emergency conditions: everyone is more likely to be affected.</td>
+					<td><a href="hazardIndex.html"><button>What can I do?</button></a></td>
+				</tr>
+			</table>
+		</div>
+		
+		<footer style="position:relative">
+			<p>Created during Hydrangea Hacks 2021 | <a href="https://hydrangeahacks.devpost.com/" target="_blank">Devpost</a> | <a href="https://www.hydrangeahacks.tech/" target="_blank">Website</a></p>
+			<p>Created by Kayla Tang | <a href="https://devpost.com/kaylatang02" target="_blank">Devpost</a> | <a href="https://www.linkedin.com/in/kayla-tang-0650251ba/" target="">LinkedIn</a></p>
+		</footer>
+	</body>
+</html>
